@@ -16,3 +16,6 @@ Screenshot
 
 
 <img src="screenshots/Capture1.JPG?raw=true"> 
+<img src="screenshots/Capture2.JPG?raw=true"> 
+<img src="screenshots/Capture3.JPG?raw=true"> 
+<img src="screenshots/Capture4.JPG?raw=true"> 
