@@ -14,4 +14,6 @@ Features
 
 Screenshot
 
+
+<img src="screenshots/Screenshot_1642073163.png?raw=true" width="100" height="400">
 ![Alt text](screenshots/Screenshot_1642073163.png?raw=true "Home"){:height="50%" width="50%"}
