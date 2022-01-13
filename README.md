@@ -15,4 +15,4 @@ Features
 Screenshot
 
 
-<img src="screenshots/Capture1.JPG?raw=true" width="200" height="250"> 
+<img src="screenshots/Capture1.JPG?raw=true"> 
