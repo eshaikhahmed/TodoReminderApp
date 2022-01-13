@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TaskDetail">
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/statusLayout"
+        android:padding="10dp"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        >
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:background="?attr/selectableItemBackground"
+          android:clickable="true"
+          android:text="STATUS : " />
+
+      <TextView
+          android:id="@+id/lblStatus"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="?attr/selectableItemBackground"
+          android:clickable="true"
+          android:text="Pending"
+          android:textColor="@color/statusRed"
+          android:paddingLeft="10dp"
+          android:textStyle="bold"
+          />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/goalLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/statusLayout"
+        android:padding="10dp"
+        >
+
+      <EditText
+          android:id="@+id/editGoal"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@null"
+          android:hint="Your Goal..."
+          android:fontFamily="cursive"
+          android:textSize="18sp"
+          android:paddingLeft="10dp"
+
+          />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/descLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/goalLayout"
+        android:padding="10dp"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        >
+
+      <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:src="@drawable/ic_mode_comment_black_24dp"
+          android:textSize="15sp"
+          android:layout_marginRight="10dp"
+          android:background="?attr/selectableItemBackground"
+          android:clickable="true"
+          />
+
+      <EditText
+          android:id="@+id/editDescription"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@null"
+          android:hint="Add Details"
+          android:textColor="@color/descColor"
+          android:fontFamily="casual"
+          android:textSize="15sp"
+          android:paddingLeft="10dp"
+          />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dueLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/descLayout"
+        android:padding="10dp"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:onClick="onAddDueDate"
+        >
+
+      <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:src="@drawable/ic_date_range_black_24dp"
+          android:textSize="15sp"
+          android:layout_marginRight="10dp"
+          android:onClick="onAddDueDate"
+          android:background="?attr/selectableItemBackground"
+          android:clickable="true"
+          />
+
+
+      <TextView
+          android:id="@+id/dueDate"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Add date/time"
+          android:onClick="onAddDueDate"
+          android:textColor="@color/dateTimelbl"
+          android:background="?attr/selectableItemBackground"
+          android:clickable="true"
+          />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/subLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/linearlayout_effect"
+        android:orientation="horizontal"
+        android:layout_below="@+id/dueLayout"
+        android:padding="10dp"
+        android:weightSum="10"
+        android:clickable="true"
+        android:onClick="onAddSubTask"
+        >
+
+      <TextView
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:background="@null"
+          android:layout_weight="7"
+          android:text="Sub Tasks"
+          android:textColor="@color/lightOrange"
+          />
+      <TextView
+          android:id="@+id/subCompleteCount"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:background="@null"
+          android:gravity="right"
+          android:layout_weight="3"
+          android:textColor="@color/lightOrange"
+          android:text="0" />
+
+    </LinearLayout>
+  </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

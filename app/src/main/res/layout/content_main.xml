@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+    <EditText
+        android:id="@+id/goalInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:imeOptions="actionDone"
+        android:singleLine="true"
+        android:hint="Type your goal..."
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:paddingLeft="2dp"
+        android:fontFamily="casual"
+        android:background="@null"
+        android:textSize="18sp"
+        />
+    <TextView android:id="@+id/lbbTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/orange"
+        android:textColor="@color/lightOrange"
+        android:padding="8dp"
+        android:text="Today"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-light"
+        android:paddingLeft="10dp"
+        android:layout_below="@+id/goalInput"
+        android:textSize="12sp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/taskRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/lbbTitle"
+
+        />
+  </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

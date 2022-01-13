@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="colorPrimary">#1E90FF</color>
+  <color name="colorPrimaryDark">#1F00FF</color>
+  <color name="colorAccent">#1E90FF</color>
+  <color name="divideColor">#63CFCBCB</color>
+  <color name="statusRed">#F31431</color>
+  <color name="dateTimelbl">#4682B4</color>
+  <color name="descColor">#FF000000</color>
+  <color name="subTaskColor">#191970</color>
+  <color name="statusGreen">#22bb33</color>
+  <color name="lightYellow">#FFFACD</color>
+  <color name="unCheckColor">#7B737E</color>
+  <color name="lightBlue">#4d79ff</color>
+  <color name="orange">#ff4000</color>
+  <color name="lightOrange">#ffece6</color>
+  <color name="plainWhite">#ffffff</color>
+</resources>
