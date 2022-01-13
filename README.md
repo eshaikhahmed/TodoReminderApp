@@ -3,7 +3,6 @@ I've creating this app for myself.
 
 This will have feature to add todo list along with set an reminder either repitive or one time.
 
-This is the only purpose of creating app.
 It is sole purpose for my productivity.
 
 Features
