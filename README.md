@@ -13,3 +13,5 @@ Features
 * Can re-arrange the list based on priority.
 
 Screenshot
+![alt text](https://github.com/eshaikhahmed/TodoReminderApp/blob/master/screenshots/Screenshot_1642073163.png?raw=true)
+![Alt text](screenshots/Screenshot_1642073163.png?raw=true "Home")
